@@ -37,11 +37,18 @@ public class RectangleTest {
         categories.add(p2);
         categories.add(p3);
 
-        System.out.println(p0.toString());
-        System.out.println(p1.toString());
-        System.out.println(p2.toString());
-        System.out.println(p3.toString());
-
         Assert.assertTrue(pointsList.equals(categories));
+    }
+
+    @Test
+    public void calculateCarthesianToPolarTest(){
+        double actual[] = rectangle.calculateCarthesianToPolar(0,0);
+
+
+        double excepted[] = new double[2];
+        excepted[0] = 0.0;
+        excepted[1] = 0.0;
+
+        Assert.assertTrue(Arrays.equals(actual, excepted));
     }
 }
