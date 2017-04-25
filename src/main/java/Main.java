@@ -10,6 +10,6 @@ public class Main {
 
         Point p = new Point(0,0);
 
-        rectangle.generateRectanglePoints(p, 1);
+        rectangle.generateRectanglePoints(p, 2);
     }
 }
