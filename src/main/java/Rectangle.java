@@ -12,7 +12,6 @@ public class Rectangle {
 
     public ArrayList generateRectanglePoints(Point pointOfEngagment, int movement){
         ArrayList<Point> pointsList = new ArrayList<Point>();
-        pointsList.add(pointOfEngagment);
         int xCoordinate = (int) pointOfEngagment.getX();
         int yCoordinate = (int) pointOfEngagment.getY();
 
