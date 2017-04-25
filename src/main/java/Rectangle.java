@@ -29,11 +29,29 @@ public class Rectangle {
         System.out.println(p2.toString());
         System.out.println(p3.toString());
 
-
+        calculateCarthesianToPolar(pointOfEngagment.getX(), pointOfEngagment.getY());
+        calculateCarthesianToPolar(p1.getX(), p1.getY());
+        calculateCarthesianToPolar(p2.getX(), p2.getY());
+        calculateCarthesianToPolar(p3.getX(), p3.getY());
 
         return pointsList;
     }
 
 
+    public double[] calculateCarthesianToPolar(double xCoordinate, double yCoordinate){
+        double x = xCoordinate;
+        double y = yCoordinate;
 
+        double r     = Math.sqrt(x*x + y*y);
+        double theta = Math.atan2(y, x);
+
+        System.out.println("r     = " + r);
+        System.out.println("theta = " + theta);
+
+        double result[] = new double[2];
+        result[0] = r;
+        result[1] = theta;
+
+        return result;
+    }
 }
